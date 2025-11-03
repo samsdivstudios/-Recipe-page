@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Brown-80: hsla(42, 89%, 60%, 0.763);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+html {
+    min-height: 100vh;
+    
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    font-family: "young serif, outfit";
+    background-color: var(--Brown-80);
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card {
+    max-width: 720px;
+    min-height: 100vh;
+    padding: 30px;
+    padding-bottom: 6px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: var(--Rose-50);
+}
+
+h1, h2 {
+    font-family: "young serif";
+}
+
+h2, p {
+    color: var(--Brown-800);
+}
+
+hr {
+    max-width: 82%;
+    margin: 0 auto;
+}
+strong {
+    font-family: outfit;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Header Start */
+header {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+p {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: outfit;
+}
+/* Header End */
+
+/* Preparation Container Start */
+.prep {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Stone-100);
+}
+
+li {
+    font-weight: 600;
+    font-family: outfit;
+    color: var(--Brown-800);
+}
+
+ul li {
+    padding-left: 0.8em;
+}
+
+/* Preparation Section Start*/
+.prep h3 {
+    font-family: outfit;
+    font-weight: 700;
+    margin-left: 8px;
+    color: var(--Rose-800);
+}
+
+.prep ul {
+    max-width: 100%;
+    padding-left: 24px;
+    margin: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.prep ul li::marker {
+    color: var(--Rose-800);
+}
+/* Preparation Section End */
+
+/* Ingredients Section Start */
+
+.ingredients {
+    max-width: 100%;
+    margin: 22px 0;
+}
+
+.ingredients ul {
+    margin: 10px 20px 20px 20px;
+    padding: 6px;
+}
+
+/* Ingredients Section End */
+/* Preparation Container End*/
+
+/* Instruction Section Start */
+.instruction-container {
+    max-width: 100%;
+    margin: 24px 0;
+}
+
+ol {
+     margin: 10px 20px 20px 20px;
+    padding: 6px;
+}
+
+ol li {
+    padding-left: 0.8em;
+}
+
+ol li::marker {
+    font-weight: 700;
+}
+/* Instruction Container End*/
+
+/* Footer Start */
+footer {
+    max-width: 100%;
+    margin: 22px 0;
+}
+
+footer p {
+    margin: 10px 0;
+    padding: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 50%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Brown-800);
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+tr:nth-child(4) th, tr:nth-child(4) td {
+  border: none;
+}
+
+td {
+    padding-left: 28px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: var(--Stone-900);
+    }
+    .card {
+        max-width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+/* Header Start*/
+    header {
+        padding: 0;
+    }
+
+    img {
+        border-radius: 0;
+        margin: 0;
+    } 
+    
+    h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .intro {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 10px;
+    }
+/* Header End */
+
+/* Preparation Container Start*/
+    .preparation-container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+/* Preparation Section Start*/
+    .prep {
+        max-width: 100%;
+        margin:10px 0;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .prep ul {
+        padding-left: 24px;
+        margin: 4px;
+    }
+    li {
+        font-size: 11px;
+        
+    }
+    
+     strong {
+        font-size: 11px;
+        font-weight: 700;
+    }
+/* Preparation Section End */
+
+ /* Ingredients Section Start */
+
+   .ingredients ul {
+        padding-bottom: 0;
+        margin: 10px;
+    }
+
+    .ingredients li {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+/* Ingredients Section End */
+/* Preparation Container End*/
+
+/* Instruction Container Start */
+    .instruction-container {
+        max-width: 100%;
+        margin: 24px 0;
+    }
+
+    .instruction-container h2 {
+        margin-left: 20px;
+    }
+
+    ol {
+        margin: 10px;
+        padding: 0 20px;
+    }
+
+    ol li {
+        padding-left: 0.6em;
+    }
+
+    ol li::marker {
+        font-weight: 600;
+    }
+/* Instruction Container End*/
+
+
+    /* Footer start*/
+    
+    footer {
+    max-width: 100%;
+    padding: 0 20px;
+    }
+
+    footer p {
+        margin: 10px 0;
+        padding: 0;
+    }
+    /* Table Start */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        width: 50%;
+        font-size: 12px;
+        text-align: left;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: var(--Brown-800);
+        border-bottom: 1px solid var(--Stone-150);
+    }
+
+    tr:nth-child(4) th, tr:nth-child(4) td {
+    border: none;
+    }
+
+    td {
+        padding: 0 20px;
+    }
+
+        
+
+        }
